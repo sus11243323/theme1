@@ -1,0 +1,238 @@
+/* Anime Music Theme with Animations */
+.theme-dark {
+    --header-primary: #ffffff;
+    --header-secondary: #ff6bc9;
+    --text-normal: #ffffff;
+    --text-muted: #ffa6e0;
+    --channels-default: #ffa6e0;
+    --interactive-normal: #ff6bc9;
+    --interactive-hover: #ff8ad4;
+    --interactive-active: #ff4abf;
+    --background-primary: rgba(0, 0, 0, 0.85);
+    --background-secondary: rgba(20, 0, 30, 0.9);
+    --background-tertiary: rgba(40, 0, 60, 0.9);
+}
+
+/* Background Video Container */
+.appMount-3lHmkl {
+    background: transparent !important;
+    position: relative;
+}
+
+.appMount-3lHmkl::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: linear-gradient(45deg, #1a0033, #330066, #6600cc);
+}
+
+/* Background Video */
+#anime-background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -99;
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+/* Music Controls */
+#anime-music-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Smooth Animations for All Elements */
+.container-1D34oG, .sidebar-2K8pFh, .chatContent-a9vAAp {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button Animations */
+.button-14-BFJ, .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    transition: all 0.3s ease !important;
+    transform: scale(1);
+    position: relative;
+    overflow: hidden;
+}
+
+.button-14-BFJ:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 201, 0.3);
+}
+
+.button-14-BFJ::before, .lookFilled-1Gx00P.colorBrand-3pXr91::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.button-14-BFJ:hover::before, .lookFilled-1Gx00P.colorBrand-3pXr91:hover::before {
+    left: 100%;
+}
+
+/* Channel List Animations */
+.containerDefault-YUSm3q {
+    transition: all 0.3s ease;
+    transform: translateX(0);
+}
+
+.containerDefault-YUSm3q:hover {
+    transform: translateX(10px);
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
+    animation: pulse 2s infinite;
+}
+
+/* Message Animations */
+.message-2qnXI6 {
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.message-2qnXI6:hover {
+    transform: scale(1.02);
+    background: rgba(255, 107, 201, 0.1);
+}
+
+/* Server List Animations */
+.guilds-2JjMmN .scroller-3X7KbA {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.guilds-2JjMmN .guild-1EfMGQ {
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.guilds-2JjMmN .guild-1EfMGQ:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+/* Input Animations */
+.channelTextArea-1VQBuV {
+    transition: all 0.3s ease;
+}
+
+.channelTextArea-1VQBuV:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 201, 0.2);
+}
+
+/* Scrollbar Styling */
+.scrollerThemed-2oenus .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff6bc9, #ff4abf);
+    border-radius: 10px;
+}
+
+.scrollerThemed-2oenus .scroller-2FKFPG::-webkit-scrollbar-track {
+    background: rgba(255, 107, 201, 0.1);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Floating Elements Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Status Icons Animation */
+.rectangularPing-3kA8oG {
+    animation: pulse 2s infinite;
+}
+
+/* User Panel Animations */
+.panel-2ZFCRb {
+    transition: all 0.3s ease;
+}
+
+.panel-2ZFCRb:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Cursor */
+body {
+    cursor: url('https://cdn.custom-cursor.com/db/13232/32/arrow2692.png'), auto;
+}
+
+/* Selection Color */
+::selection {
+    background: rgba(255, 107, 201, 0.3);
+}
+
+/* Login/Splash Screen Styling */
+.appMount-3lHmkl .splashBackground-1FRCko {
+    background: linear-gradient(45deg, #1a0033, #330066, #6600cc) !important;
+}
+
+/* Nitro/Gift Button Special Animation */
+.button-38aScr[aria-label="Send a gift"] {
+    background: linear-gradient(45deg, #ff6bc9, #ff8ad4) !important;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Voice Channel Animations */
+.container-1giJp5 {
+    transition: all 0.3s ease;
+}
+
+.container-1giJp5:hover {
+    background: rgba(255, 107, 201, 0.2);
+    transform: scale(1.02);
+}
+
+/* Member List Animations */
+.member-3W1lQa {
+    transition: all 0.3s ease;
+}
+
+.member-3W1lQa:hover {
+    transform: translateX(5px);
+    background: rgba(255, 107, 201, 0.1);
+}
+
+/* Loading Animation */
+.flowerStar-2tNFt5 {
+    fill: #ff6bc9 !important;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .theme-dark {
+        --background-primary: rgba(0, 0, 0, 0.9);
+    }
+}
